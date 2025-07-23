@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Captionly - AI Caption Generator</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="fw-bold mb-0">Captionly</h2>
+      <div>
+        <a href="#" class="text-decoration-none me-3 text-muted">Pricing</a>
+        <a href="#" class="text-decoration-none text-muted">FAQ</a>
+      </div>
+    </div>
+
+    <div class="text-center mb-4">
+      <h1 class="fw-bold mb-2">Let AI Write Your<br><span class="text-primary">Next Viral Caption</span></h1>
+      <p class="text-muted">Describe your photo or video. Get 5+ captions instantly.</p>
+    </div>
+
+    <div class="text-center mb-4">
+      <input type="text" class="form-control form-control-lg mb-3 mx-auto w-100 w-md-75 w-lg-50" placeholder="What’s your post about?"/>
+      <button class="btn btn-primary btn-lg px-4">Generate Captions</button>
+    </div>
+
+    <div class="caption-list mb-5">
+      <div class="caption-item d-flex justify-content-between align-items-center">
+        <span>Just a sundown at the beach turning up the heat</span>
+        <i class="bi bi-clipboard ms-2 copy-icon"></i>
+      </div>
+      <div class="caption-item d-flex justify-content-between align-items-center">
+        <span>Tanning in the last light of day. You’re not ready for this glow</span>
+        <i class="bi bi-clipboard ms-2 copy-icon"></i>
+      </div>
+      <div class="caption-item d-flex justify-content-between align-items-center">
+        <span>Sunset stole the show, but I’m still the main event</span>
+        <i class="bi bi-clipboard ms-2 copy-icon"></i>
+      </div>
+      <div class="caption-item d-flex justify-content-between align-items-center">
+        <span>Not even the sunset can handle all this fire</span>
+        <i class="bi bi-clipboard ms-2 copy-icon"></i>
+      </div>
+      <div class="caption-item d-flex justify-content-between align-items-center">
+        <span>Beach hair, don’t care. The sun and I are savage together</span>
+        <i class="bi bi-clipboard ms-2 copy-icon"></i>
+      </div>
+    </div>
+
+    <div class="row text-center mb-4 g-4">
+      <div class="col-6 col-md-3">
+        <i class="bi bi-person-check-fill display-6 text-primary"></i>
+        <p class="mt-2 fw-semibold">No Login Needed</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <i class="bi bi-emoji-smile-fill display-6 text-primary"></i>
+        <p class="mt-2 fw-semibold">Choose Your Vibe</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <i class="bi bi-globe2 display-6 text-primary"></i>
+        <p class="mt-2 fw-semibold">Made for Creators Worldwide</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <i class="bi bi-stars display-6 text-primary"></i>
+        <p class="mt-2 fw-semibold">New captions every time</p>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <p class="fw-semibold mb-2">Want Unlimited Captions?</p>
+      <button class="btn btn-primary btn-lg">Unlock Pro Plan</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script>
+    document.querySelectorAll('.copy-icon').forEach(icon => {
+      icon.addEventListener('click', function () {
+        const text = this.previousElementSibling.textContent;
+        navigator.clipboard.writeText(text);
+        alert('Caption copied to clipboard!');
+      });
+    });
+  </script>
+</body>
+</html>

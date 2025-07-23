@@ -27,3 +27,31 @@ body {
 .copy-icon:hover {
   color: #0d6efd;
 }
+/* new */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.caption-card {
+  transition: box-shadow 0.2s ease;
+}
+
+.caption-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.copy-icon {
+  font-size: 1.3rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.copy-icon:hover {
+  color: #0d6efd;
+}
+
+.bg-gray {
+  background: lightgrey;
+}

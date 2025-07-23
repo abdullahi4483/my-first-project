@@ -27,7 +27,7 @@ body {
 .copy-icon:hover {
   color: #0d6efd;
 }
-/* new */
+/* card */
 
 body {
   font-family: 'Inter', sans-serif;
@@ -55,3 +55,100 @@ body {
 .bg-gray {
   background: lightgrey;
 }
+
+
+/* pricing */
+
+.pricing-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 1rem;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+}
+
+.plan-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.plan-feature {
+  margin-bottom: 0.5rem;
+}
+
+.check-icon {
+  color: #0d6efd;
+  margin-right: 0.5rem;
+}
+
+.free-check {
+  color: #198754;
+}
+
+@media (max-width: 768px) {
+  .pricing-card {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* FAQ */
+
+body {
+  background-color: #fefefe;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.faq-header {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  color: #4a4a4a;
+}
+
+.accordion-button {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #0d6efd;
+  background-color: #e7f1ff;
+}
+
+.accordion-item {
+  border-radius: 12px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.accordion-body {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+@media (max-width: 576px) {
+  .faq-header h2 {
+    font-size: 1.25rem;
+  }
+
+  .accordion-button {
+    font-size: 0.95rem;
+  }
+}
+
+
